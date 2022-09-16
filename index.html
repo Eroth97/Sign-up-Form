@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+  <title>Sign-Up Form</title>
+</head>
+<body>
+  <div id="image">
+    <div>ODIN</div>
+    <p>Photo by <a href="https://unsplash.com/es/@rtriangle">Daniil Korbut</a> on <a href="https://unsplash.com/es">Unsplash</a></p>
+  </div>
+
+  <div id ="form">
+    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <en>now</en> to get started.</p>
+
+    <p>You <em>know</em> you want to.</p>
+
+    <form action="POST">
+      <fieldset>
+        <legend>Let's do this!</legend>
+        <div class="section">
+          <label for="first-name">FIRST NAME</label>
+          <input type="text" id="first-name" placeholder="Thor" name="first-name">
+
+          <label for="second-name">SECOND NAME</label>
+          <input type="text" id="second-name" name="second-name">
+        </div>
+
+        <div class="section">
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email">
+
+          <label for="telNumber">PHONE NUMBER</label>
+          <input type="tel" id="telNumber" name="telNumber">
+        </div>
+
+        <div class="section">
+          <label for="psw">PASSWORD</label>
+          <input type="password" id="psw" name="password">
+
+          <label for="confirmPsw">CONFIRM PASSWORD</label>
+          <input type="password" id="confirmPsw" name="confirmPassword">
+        </div>
+      </fieldset>
+    <button type="submit">Create Account</button>
+    </form>
+    <p>Already have an account? <a href="url">Log in</a></p>
+  </div>
+</body>
+</html>
