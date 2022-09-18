@@ -2,6 +2,7 @@ body{
   display: flex;
   height: 100vh;
   margin: 0;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 #image{
@@ -11,16 +12,47 @@ body{
   background-repeat: no-repeat-y;
 }
 
+p{
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+p + p{
+  margin-top: 0;
+}
+
 #form{
+  width: 60%;
   margin: 1rem;
   display: flex;
   flex-direction: column;
+}
+
+form{
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.section{
+  display: flex;
+  gap: 4rem;
 }
 
 input+label{
   margin-left: 10rem;
 }
 
-div+div{
+.section+div{
   margin-top: 2rem;
+}
+
+.empty-space{
+  height: 10rem;
+}
+
+.label-input{
+  display: flex;
+  flex-direction: column;
 }

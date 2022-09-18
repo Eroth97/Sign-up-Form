@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
   <script src="./script.js" defer></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+  </style>
   <title>Sign-Up Form</title>
 </head>
 <body>
@@ -15,6 +18,7 @@
   </div>
 
   <div id ="form">
+    <div class="empty-space"></div>
     <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <en>now</en> to get started.</p>
 
     <p>You <em>know</em> you want to.</p>
@@ -23,27 +27,37 @@
       <fieldset>
         <legend>Let's do this!</legend>
         <div class="section">
-          <label for="first-name">FIRST NAME</label>
-          <input type="text" id="first-name" placeholder="Thor" name="first-name">
-
-          <label for="second-name">SECOND NAME</label>
-          <input type="text" id="second-name" name="second-name">
+          <div class="label-input">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" placeholder="Thor" name="first-name">
+          </div>
+          
+          <div class="label-input">          
+            <label for="second-name">SECOND NAME</label>
+            <input type="text" id="second-name" name="second-name">
+          </div>
         </div>
 
         <div class="section">
-          <label for="email">EMAIL</label>
-          <input type="email" id="email" name="email">
-
-          <label for="telNumber">PHONE NUMBER</label>
-          <input type="tel" id="telNumber" name="telNumber">
+          <div class="label-input">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="label-input">
+            <label for="telNumber">PHONE NUMBER</label>
+            <input type="tel" id="telNumber" name="telNumber">
+          </div>
         </div>
 
         <div class="section">
-          <label for="psw">PASSWORD</label>
-          <input type="password" id="psw" name="password">
-
-          <label for="confirmPsw">CONFIRM PASSWORD</label>
-          <input type="password" id="confirmPsw" name="confirmPassword">
+          <div class="label-input">
+            <label for="psw">PASSWORD</label>
+            <input type="password" id="psw" name="password">
+          </div>
+          <div class="label-input">
+            <label for="confirmPsw">CONFIRM PASSWORD</label>
+            <input type="password" id="confirmPsw" name="confirmPassword">
+          </div>
         </div>
       </fieldset>
     <button type="submit">Create Account</button>
