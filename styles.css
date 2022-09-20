@@ -1,43 +1,79 @@
 body{
+  background-color: antiquewhite;
   display: flex;
   height: 100vh;
+  width: 100vw;
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
+  justify-content: center;
+}
+
+.body{
+  background-color: white;
+  display: flex;
+  width: 80vw;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: blue;
 }
 
 #image{
-  width: 40%;
+  width: 50%;
   background-image: url("./daniil-korbut-xNc4mGTOPNc-unsplash.jpg");
   background-size: 100% 100%;
-  background-repeat: no-repeat-y;
+  background-repeat: no-repeat;
 }
 
 p{
-  font-size: 24px;
-  font-weight: bold;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  font-size: 1.5rem;
+  margin-left: 2rem;
 }
 
 p + p{
   margin-top: 0;
 }
 
+em{
+  font-weight: bolder;
+}
+
 #form{
-  width: 60%;
+  width: 50%;
   margin: 1rem;
   display: flex;
   flex-direction: column;
 }
 
+.empty-space{
+  height: 4rem;
+}
+
 form{
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 2rem;
+}
+
+.fieldset{
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  width: 100%;
 }
 
 .section{
   display: flex;
   gap: 4rem;
+}
+
+label{
+  font-weight: bold;
+}
+
+input{
+  width: 14vw;
 }
 
 input+label{
@@ -48,11 +84,28 @@ input+label{
   margin-top: 2rem;
 }
 
-.empty-space{
-  height: 10rem;
+.section:last-child{
+  margin-bottom: 1rem;
 }
 
 .label-input{
   display: flex;
   flex-direction: column;
+}
+
+button{
+  font-size: 1.2rem;
+  font-family: 'Cormorant Garamond', serif;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background-color: #c4c1e0;
+  border: none;
+}
+
+button:hover{
+  background-color: #afadc8;
+}
+
+div + button{
+  margin-top: 1rem;
 }
