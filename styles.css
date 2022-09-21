@@ -23,10 +23,38 @@ a:visited{
 }
 
 #image{
+  position: relative;
   width: 50%;
   background-image: url("./daniil-korbut-xNc4mGTOPNc-unsplash.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.odin{
+  position: absolute;
+  background-color: rgba(196, 193, 224, 0.5);
+  top: 10rem;
+  width: 100%;
+  height: 5rem;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  color: lightgoldenrodyellow;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#logo{
+  font-size: 2rem;
+  color:lightgoldenrodyellow;
+  opacity: 1;
 }
 
 p{
@@ -98,7 +126,7 @@ button{
   font-family: 'Cormorant Garamond', serif;
   border-radius: 8px;
   padding: 0.5rem;
-  background-color: #c4c1e0;
+  background-color: rgba(196, 193, 224);
   border: none;
 }
 
