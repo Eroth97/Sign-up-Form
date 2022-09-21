@@ -25,40 +25,40 @@
 
       <p>You <em>know</em> you want to.</p>
 
-      <form action="POST">
+      <form action="#" method="get">
         <div class="fieldset">
           <h2>Let's do this!</h2>
           <div class="section">
             <div class="label-input">
-              <label for="first-name">FIRST NAME</label>
-              <input type="text" id="first-name" name="first-name">
+              <label for="first-name">* FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name" required max="30" pattern="[a-zA-Z]+" placeholder=" John">
             </div>
             
             <div class="label-input">          
-              <label for="second-name">SECOND NAME</label>
-              <input type="text" id="second-name" name="second-name">
+              <label for="second-name">* SECOND NAME</label>
+              <input type="text" id="second-name" name="second-name" required max="30" pattern="[a-zA-Z]+" placeholder=" Larson">
             </div>
           </div>
 
           <div class="section">
             <div class="label-input">
-              <label for="email">EMAIL</label>
-              <input type="email" id="email" name="email">
+              <label for="email">* EMAIL</label>
+              <input type="email" id="email" name="email" required placeholder=" iamaprogrammer@odin.com">
             </div>
             <div class="label-input">
               <label for="telNumber">PHONE NUMBER</label>
-              <input type="tel" id="telNumber" name="telNumber">
+              <input type="tel" id="telNumber" name="telNumber" pattern="[0-9]+">
             </div>
           </div>
 
           <div class="section">
             <div class="label-input">
-              <label for="psw">PASSWORD</label>
-              <input type="password" id="psw" name="password">
+              <label for="psw">* PASSWORD</label>
+              <input type="password" id="psw" name="password" required>
             </div>
             <div class="label-input">
-              <label for="confirmPsw">CONFIRM PASSWORD</label>
-              <input type="password" id="confirmPsw" name="confirmPassword">
+              <label for="confirmPsw">* CONFIRM PASSWORD</label>
+              <input type="password" id="confirmPsw" name="confirmPassword" required>
             </div>
           </div>
         </div class="fieldset">

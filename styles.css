@@ -102,6 +102,17 @@ label{
 
 input{
   width: 14vw;
+  height: 1.3rem;
+  outline: none;
+  border-radius: 8px;
+}
+
+input:focus:invalid{  
+  border: 2px solid red;
+}
+
+input:focus:valid{
+  border: 2px solid green;
 }
 
 input+label{
